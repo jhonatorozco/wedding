@@ -14,7 +14,7 @@
     .iframe-wrapper {
       position: relative;
       width: 100%;
-      padding-top: 500%; /* Ajusta el alto según tu necesidad */
+      padding-top: 600%; /* Ajusta el alto según tu necesidad */
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
       overflow: hidden;
@@ -46,6 +46,13 @@
       margin-right: auto;
     }
   </style>
+  <script>
+  window.addEventListener("orientationchange", function() {
+    if (window.orientation === 0) {
+      alert("Para ver toda la invitación, gira tu celular horizontalmente 📱↔️");
+    }
+  });
+</script>
 </head>
 <body>
 
@@ -57,14 +64,6 @@
       allow="fullscreen">
     </iframe>
   </div>
-
-  <a
-    href="https://www.canva.com/design/DAGsQwg8wO4/hmcFdrkxmpbp9Yja_2kjtQ/view"
-    target="_blank"
-    rel="noopener"
-    class="boton-ver-completo">
-    Ver invitación completa
-  </a>
 
 </body>
 </html>
