@@ -1,25 +1,32 @@
-<div class="responsive-iframe-container">
-  <iframe
-    src="https://www.canva.com/design/DAGsQwg8wO4/hmcFdrkxmpbp9Yja_2kjtQ/view?embed"
-    allowfullscreen
-    loading="lazy"
-  ></iframe>
-</div>
 
-<style>
-  .responsive-iframe-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-top: 130%; /* Ajusta según el aspecto del diseño de Canva */
-  }
-
-  .responsive-iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-</style>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <!-- Meta viewport para hacer la página móvil-responsiva:contentReference[oaicite:7]{index=7} -->
+  <style>
+    /* Reset de márgenes y fondo para evitar bordes indeseados */
+    body { margin: 0; padding: 0; background: #fff; }
+    /* Contenedor responsivo del iframe */
+    .canva-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      /* Relación de aspecto 16:9 (cambia según tu diseño: p.ej. 177.78% para 9:16) */
+      padding-top: 56.25%;
+    }
+    /* El iframe cubre todo el contenedor */
+    .canva-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="canva-container">
+    <iframe src="https://www.canva.com/design/DAGsQwg8wO4/hmcFdrkxmpbp9Yja_2kjtQ/view?embed" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
