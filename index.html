@@ -1,7 +1,70 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGsQwg8wO4/hmcFdrkxmpbp9Yja_2kjtQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff;
+      font-family: sans-serif;
+    }
+
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 500%; /* Ajusta el alto según tu necesidad */
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
+      overflow: hidden;
+      margin: 1em auto;
+      max-width: 480px;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .boton-ver-completo {
+      display: block;
+      text-align: center;
+      margin-top: 1em;
+      font-size: 1.1em;
+      text-decoration: none;
+      color: white;
+      background-color: #1abc9c;
+      padding: 0.7em 1.2em;
+      border-radius: 6px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="iframe-wrapper">
+    <iframe
+      loading="lazy"
+      src="https://www.canva.com/design/DAGsQwg8wO4/hmcFdrkxmpbp9Yja_2kjtQ/view?embed"
+      allowfullscreen="allowfullscreen"
+      allow="fullscreen">
+    </iframe>
+  </div>
+
+  <a
+    href="https://www.canva.com/design/DAGsQwg8wO4/hmcFdrkxmpbp9Yja_2kjtQ/view"
+    target="_blank"
+    rel="noopener"
+    class="boton-ver-completo">
+    Ver invitación completa
+  </a>
+
+</body>
+</html>
