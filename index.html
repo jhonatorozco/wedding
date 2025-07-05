@@ -6,7 +6,8 @@
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch; /* Ayuda al scroll suave en iOS */
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation; /* Esto permite scroll táctil */
   }
   iframe {
     overflow-y: scroll;
