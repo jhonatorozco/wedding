@@ -1,32 +1,34 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <!-- Meta viewport para hacer la página móvil-responsiva:contentReference[oaicite:7]{index=7} -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de boda</title>
   <style>
-    /* Reset de márgenes y fondo para evitar bordes indeseados */
-    body { margin: 0; padding: 0; background: #fff; }
-    /* Contenedor responsivo del iframe */
-    .canva-container {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      /* Relación de aspecto 16:9 (cambia según tu diseño: p.ej. 177.78% para 9:16) */
-      padding-top: 56.25%;
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #fff;
     }
-    /* El iframe cubre todo el contenedor */
-    .canva-container iframe {
-      position: absolute;
-      top: 0; left: 0;
+
+    .pdf-container {
+      width: 100%;
+      height: 100vh; /* Toma todo el alto de la pantalla */
+    }
+
+    iframe {
       width: 100%;
       height: 100%;
-      border: 0;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <div class="canva-container">
-    <iframe src="https://www.canva.com/design/DAGsQwg8wO4/hmcFdrkxmpbp9Yja_2kjtQ/view?embed" allowfullscreen></iframe>
+
+  <div class="pdf-container">
+    <iframe src="Invitacion-Digital.pdf"></iframe>
   </div>
+
 </body>
 </html>
