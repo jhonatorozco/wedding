@@ -3,8 +3,14 @@
 <style>
   html, body {
     height: auto;
+    min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Ayuda al scroll suave en iOS */
+  }
+  iframe {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 </style>
 
@@ -15,4 +21,3 @@
     src="https://www.canva.com/design/DAGsQwg8wO4/hmcFdrkxmpbp9Yja_2kjtQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
 </div>
-
